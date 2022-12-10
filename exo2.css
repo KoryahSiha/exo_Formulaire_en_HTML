@@ -1,0 +1,98 @@
+.conteneur {
+    width: 320px;
+    height: 320px;
+    background-color: #24323d;
+    border: 2px solid black;
+    box-shadow: 3px 3px 1px rgb(97, 97, 97);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+}
+
+nav a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.729);
+}
+
+nav a:hover {
+    color: rgb(163, 125, 28);
+}
+
+.nav__signup {
+    background-color: #19b088;
+    width: 138px;
+    height: 30px;
+}
+
+.nav__login {
+    background-color: #435257;
+    width: 138px;
+    height: 30px;
+}
+
+h1 {
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-size: 1em;
+    margin: 1.2em auto;
+}
+
+.form {
+    text-align: center;
+}
+
+.form__firstName {
+    background-color: #19b088;
+    color: white;
+    width: 135px;
+    height: 20px;
+    margin: 0.7em auto;
+}
+
+.form__lastName {
+    background-color: #435257;
+    color: white;
+    width: 135px;
+    height: 20px;
+    margin: 0.7em auto;
+}
+
+.form__email {
+    width: 280px;
+    height: 20px;
+    margin: 0.7em auto;
+}
+
+.form__password {
+    width: 280px;
+    height: 20px;
+    margin: 0.7em auto;
+}
+
+.form__started {
+    background-color: #19b088;
+    color: white;
+    font-size: 0.9em;
+    font-weight: bold;
+    height: 40px;
+    width: 287px;
+    margin: 0.7em auto;
+    
+}
+
+.form__firstName, .form__lastName, .form__email, .form__password {
+    background-color: #24323d;
+    color: #758088;
+    border-color: rgba(196, 196, 196, 0.556);
+}
+
+.nav__signup, .nav__login, .form__started {
+    border-width: 0;
+}
