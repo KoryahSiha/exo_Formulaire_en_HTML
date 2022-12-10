@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="exo3.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <header class="header">
+        <h1>Sondage Xbox</h1>
+
+        <p>Pour participer à ce sondage <strong>vous devez posséder</strong> un gamertag et au moins un appareil Xbox.</p>
+        <p>Les réponses nous sont envoyées de manière anonyme. Aussi, en y répondant <strong>vous acceptez et comprenez</strong> que nous utiliserons ces données afin didentifier les tendances actuelles des joueurs et joueuses Xbox.</p>
+        <p>Vous pouvez annuler vos réponses et quitter le questionnaire <strong>à tout moment</strong>.</p>
+        <p class="header__aster">Les questions avec un * sont obligatoires.</p>
+    </header>
+
+    <form class="form" action="#" method="post">
+
+        <div class="inscription">
+            <label for="addressEmail">Entrez votre adresse mail :</label>
+            <input class="inscription__email" id="addressEmail" type="email" placeholder="Adresse mail*" required>
+
+            <label for="gamertag">Entrez votre Gamertag :</label>
+            <input class="inscription__gamertag" id="gamertag" type="text" placeholder="Gamertag*" required>
+        </div>
+
+        <div class="genre">
+            <fieldset class="genre__types">
+                <legend class="genre__select">Vous êtes ? :</legend>
+                <input type="radio" id="hommeInput" name="hommeInput" value="homme">
+                <label for="hommeInput">Un homme</label><br>
+
+                <input type="radio" id="femmeInput" name="femmeInput" value="femme">
+                <label for="femmeInput">Une femme</label><br>
+
+                <input type="radio" id="nonbinaireInput" name="nonbinaireInput" value="nonbinaire">
+                <label for="nonbinaireInput">Non-binaire</label><br>
+
+                <input type="radio" id="aucunGenreInput" name="aucunGenreInput" value="no-genre-select">
+                <label for="aucunGenreInput">Je ne souhaite pas le dire</label><br>
+            </fieldset>
+        </div>
+
+        <div class="age">
+            <label class="age__select" for="age">Quel âge avez-vous ? :</label>
+                <select class="age__option" name="age" id="age">
+                    <option value="">Choississez une option</option>
+                    <option value="13-19">13-19 ans</option>
+                    <option value="20-29">20-29 ans</option>
+                    <option value="30-39">30-39 ans</option>
+                    <option value="40-49">40-49 ans</option>
+                    <option value="50-59">50-59 ans</option>
+                    <option value="60+">60+ ans</option>
+                    <option value="nonditAge">Je ne souhaite pas le dire</option>
+                </select>
+        </div>
+
+        <div class="appareils">
+            <fieldset class="appareils__types">
+                <legend class="appareils__select">Sur quel(s) appareil(s) jouez-vous ? : </legend>
+                <input type="checkbox" id="consoleInput" name="consoleInput" value="console">
+                <label for="consoleInput">Console(s)</label><br>
+        
+                <input type="checkbox" id="pcInput" name="pcInput" value="pc">
+                <label for="pcInput">PC</label><br>
+        
+                <input type="checkbox" id="mobileInput" name="mobileInput" value="mobile">
+                <label for="mobileInput">Mobile</label><br>
+
+                <input type="checkbox" id="tabletteInput" name="tabletteInput" value="tablette">
+                <label for="tabletteInput">Tablette</label><br>
+
+                <input type="checkbox" id="xcloudInput" name="xcloudInput" value="xCloud">
+                <label for="xcloudInput">Autre (xCloud)</label><br>
+            </fieldset>
+        </div>
+
+        <div class="consoles">
+            <fieldset class="consoles__types">
+                <legend class="consoles__select">Quel(s) appareil(s) Xbox possèdez-vous ? : </legend>
+                <input type="checkbox" id="xboxOriginalInput" name="xboxOriginalInput" value="original">
+                <label for="xboxOriginalInput">Xbox Original</label><br>
+        
+                <input type="checkbox" id="xbox360Input" name="xbox360Input" value="xbox360">
+                <label for="xbox360Input">Xbox 360</label><br>
+        
+                <input type="checkbox" id="xboxOneInput" name="xboxOneInput" value="xboxOne">
+                <label for="xboxOneInput">Xbox One / One X</label><br>
+
+                <input type="checkbox" id="xboxSeriesInput" name="xboxSeriesInput" value="xboxSeries">
+                <label for="xboxSeriesInput">Xbox Series S | X</label><br>
+            </fieldset>
+        </div>
+
+        <div class="fonctionnalites">
+            <fieldset class="fonctionnalites__types">
+                <legend class="fonctionnalites__select">Parmi ces fonctionnalités, laquelle/lesquelles utilisez-vous ? : </legend>
+                <input type="checkbox" id="quickResumeInput" name="quickResumeInput" value="quickResume">
+                <label for="quickResumeInput">Quick Resume</label><br>
+        
+                <input type="checkbox" id="clavierSourisInput" name="clavierSourisInput" value="clavierSouris">
+                <label for="clavierSourisInput">Prise en charge de la souris et du clavier</label><br>
+        
+                <input type="checkbox" id="accessibiliteInput" name="accessibiliteInput" value="accessibilite">
+                <label for="accessibiliteInput">Paramètres d’accessibilité (mode nuit, narrateur, haut contraste...)</label><br>
+
+                <input type="checkbox" id="assistanceInput" name="assistanceInput" value="assistance">
+                <label for="assistanceInput">L’assistance personnalisée</label><br>
+
+                <input type="checkbox" id="fonctionInput" name="fonctionInput" value="aucun-fonctionnalite">
+                <label for="fonctionInput">Aucune des réponses ci-dessus</label><br>
+            </fieldset>
+        </div>
+
+        <div class="jeux">
+            <fieldset class="jeux__types">
+                <legend class="jeux__select">Quel(s) genre(s) de jeux aimez-vous ? : </legend>
+                <input type="checkbox" id="rpgInput" name="rpgInput" value="rpg">
+                <label for="rpgInput"><strong>RPG</strong> (Mass Effect, The Elder Scrolls V : Skyrim, The Witcher 3...)</label><br>
+        
+                <input type="checkbox" id="infiltrationInput" name="infiltrationInput" value="infiltration">
+                <label for="infiltrationInput"><strong>Infiltration</strong> (Splinter Cell, Hitman, Metal Gear Solid...)</label><br>
+        
+                <input type="checkbox" id="actionInput" name="actionInput" value="action">
+                <label for="actionInput"><strong>Action / Aventure</strong> (Gears of War, Red Dead Redemption , The Legend of Zelda : Breath of the Wild...)</label><br>
+
+                <input type="checkbox" id="narratifInput" name="narratifInput" value="narratif">
+                <label for="narratifInput"><strong>Narratif</strong> (Life is Strange, As Dusk Falls, A Plague Tale : Innocence...)</label><br>
+
+                <input type="checkbox" id="plateformeInput" name="plateformeInput" value="xplateforme">
+                <label for="plateformeInput"><strong>Plateforme</strong> (Banjo-Kazooie, Super Mario Odyssey, Yooka-Laylee...)</label><br>
+
+                <input type="checkbox" id="simulationInput" name="simulationInput" value="simulation">
+                <label for="simulationInput"><strong>Simulation / Stratégie</strong> (Age of Empires, XCOM 2, Microsoft Flight Simulator...)</label><br>
+        
+                <input type="checkbox" id="metroidvaniaInput" name="metroidvaniaInput" value="metroidvania">
+                <label for="metroidvaniaInput"><strong>Metroivania</strong> (Ori and the Blind forest, Hollow Knight, Dead Cells...)</label><br>
+                
+                <input type="checkbox" id="familialInput" name="familialInput" value="familial">
+                <label for="familialInput"><strong>Jeu familial</strong> / coopération (It Takes Two, Overcooked, Moving Out...)</label><br>
+
+                <input type="checkbox" id="sportInput" name="sportInput" value="sport">
+                <label for="sportInput"><strong>Sport</strong> (Forza Horizon 5, FIFA 23, NBA 23...)</label><br>
+
+                <input type="checkbox" id="horreurInput" name="horreurInput" value="horreur">
+                <label for="horreurInput"><strong>Horreur</strong> (The Dark Pictures Anthology, Dead Space, Scorn...)</label><br>
+
+                <input type="checkbox" id="multiInput" name="multiInput" value="multi">
+                <label for="multiInput"><strong>Multijoueur</strong> (Sea of Thieves, Counter-Strikes : Global Offensive, Overwatch 2...)</label><br>
+
+                <input type="checkbox" id="indeInput" name="indeInput" value="inde">
+                <label for="indeInput"><strong>Indé</strong> (To the Moon, Oxenfree, Celeste...)</label><br>
+
+                <input type="checkbox" id="combatInput" name="combatInput" value="combat">
+                <label for="combatInput"><strong>Combat</strong> (Street Fighter, Super Smash Bros., Tekken 7...)</label><br>
+
+                <input type="checkbox" id="mmoInput" name="mmoInput" value="mmo">
+                <label for="mmoInput"><strong>MMORPG</strong> (World of Warcraft, Final Fantasy XIV, Dofus...)</label><br>
+            </fieldset>
+        </div>
+
+        <div class="recommandation">
+            <label class="recommandation__select" for="recommandation">Recommanderiez-vous Xbox à votre entourage ? :</label>
+                <select class="recommandation__option" name="recommandation" id="recommandation">
+                    <option value="">Choississez une option</option>
+                    <option value="certainement">Très certainement</option>
+                    <option value="probablement">Probablement</option>
+                    <option value="neutre">Neutre</option>
+                    <option value="peu-probable">Peu probable</option>
+                    <option value="certainement-pas">Certainement pas</option>
+                </select>
+        </div>
+
+        <div class="message">
+            <p>Si vous avez des remarques ou des suggestions, laissez-nous un commentaire ci-dessous.</p>
+            <textarea maxlength="10" class="message__Input" name="messageInput" id="messageInput" cols="50" rows="10" placeholder="Tapez votre message ici.."></textarea>
+        </div>
+
+        <div class="sondageBouton">
+            <button class="sondageBouton__envoi" type="submit">Envoyer le sondage</button>
+        </div>
+    </form>
+</body>
+</html>
