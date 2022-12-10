@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="exo2.css">
+    <title>Concevoir et styliser un formulaire</title>
+</head>
+<body>
+    <div class="conteneur">
+        <nav class="nav">
+            <a class="nav__signup" href="">Sign Up</a>
+            <a class="nav__login" href="">Log In</a>
+        </nav>
+        
+        <h1>Sign Up For Free</h1>
+
+        <form class="form" action="#" method="post">
+            <div>
+                <input class="form__firstName" type="text" name="firstName" id="firstName" placeholder="First Name*">
+                <input class="form__lastName" type="text" name="lastName" id="lastName" placeholder="Last Name*">
+            </div>
+
+            <div>
+                <input class="form__email" type="email" name="email" id="email" placeholder="Email Address*">
+            </div>
+
+            <div>
+                <input class="form__password" type="password" name="password" id="password" minlength="8" required placeholder="Password*">
+            </div>
+
+            <button class="form__started" type="submit">GET STARTED</button>
+        </form>
+    </div>
+</body>
+</html>
